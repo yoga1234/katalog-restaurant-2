@@ -1,0 +1,163 @@
+@media screen and (min-width: 800px) {
+  .header-wrapper {
+    display: grid;
+  }
+  .hamburger-menu {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  .brand-logo {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 5px 25px 5px 25px;
+  }
+  nav {
+    position: inherit;
+    grid-column-start: 10;
+    background-color: inherit;
+    transform: translate(0, 0);
+  }
+  .navigation-items {
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    height: max-content;
+  }
+  .link-item {
+    display: inline-block;
+    border: none;
+    margin: 0;
+  }
+  .link-item a{
+    padding: 20px 15px 20px 15px;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    transition: .3s ease all;
+  }
+  .link-item a:hover, .link-item a:focus {
+    background-color: rgba(241, 250, 238, .2);
+    border-radius: 5px;
+    outline: none;
+  }
+  .jumbotron h1 {
+    font-size: 25px;
+  }
+  .jumbotron p {
+    font-size: 90px;
+  }
+  .who-we-are-section {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto 50px auto;
+  }
+  .who-we-are-left {
+    width: 100%;
+  }
+  .who-we-are-right {
+    margin-top: 50px;
+    height: 80%;
+    width: 80%;
+  }
+  .article-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 950px;
+    margin: auto;
+  }
+  .section-header {
+    font-size: 35px;
+    font-weight: 300;
+  }
+  .home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-article {
+    display: inherit;
+    grid-gap: 20px 20px;
+    max-width: 400px;
+    width: 95%;
+  }
+  .article-title {
+    margin: 0 auto 0 auto;
+    font-size: 23px;
+  }
+  .article-desc {
+    margin: 0 auto 0 auto;
+    font-size: 16px;
+  }
+  .article-footer-item {
+    font-size: 14px;
+  }
+  .out-text {
+    font-size: 35px;
+  }
+  .service-text {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .header-wrapper {
+    max-width: 1000px;
+  }
+  .section-header {
+    font-size: 45px;
+  }
+  .our-service-card {
+    margin: 80px auto 0 auto;
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+  .friendly-staff-article,
+  .next-level-food-article,
+  .proven-quality-article {
+    width: 100%;
+  }
+  .detail-container {
+    width: 80%;
+  }
+  .detail-restaurant-image {
+    width: 85%;
+  }
+  .detail-rating-and-reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+  }
+  .back-to-top-text,
+  .add-to-favorite-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    grid-column-start: 12;
+  }
+  .jumbotron {
+    height: 650px;
+    padding: 350px 30px 50px 30px;
+  }
+  .article-container {
+    width: 95%;
+    max-width: 1200px;
+  }
+  .home-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card-article {
+    max-width: 500px;
+  }
+  .article-footer-item {
+    font-size: 14px;
+  }
+  .our-service-card {
+    width: 80%;
+  }
+}

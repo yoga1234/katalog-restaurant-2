@@ -13,7 +13,7 @@ import loadHeroImage from '../scripts/utils/load-hero-image'
 import heroImage from '../public/images/heros/hero-image_1.jpg'
 
 window.addEventListener('DOMContentLoaded', async () => {
-  await loadHeroImage(heroImage)
+  loadHeroImage(heroImage)
   hamburgerMenuInitiator()
   jumbotronRemover()
   if (window.location.hash === '#maincontent') {

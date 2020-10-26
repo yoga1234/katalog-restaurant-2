@@ -1,0 +1,4 @@
+[1024/210229.955:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\YOGASM~1\AppData\Local\Temp\karma-70196220\Crashpad\attachments\0b21ee1c-56ac-45ec-93ae-190c2abb6571: The system cannot find the path specified. (0x3)
+[1024/210230.048:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1024/210230.048:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1024/210230.048:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)

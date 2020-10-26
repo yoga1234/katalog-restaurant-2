@@ -9,7 +9,18 @@ import jumbotronRemover from '../scripts/utils/jumbotron-remover'
 import hamburgerMenuInitiator from '../scripts/utils/hamburger-menu-initiator'
 import swRegister from './utils/sw-register'
 
+import heroImage from '../public/images/heros/hero-image_1.jpg'
+
+const loadHeroImage = () => {
+  const jumbotronContainer = document.querySelector('.jumbotron')
+  const myHeroImage = new Image()
+  myHeroImage.src = heroImage
+
+  jumbotronContainer.appendChild(myHeroImage)
+}
+
 window.addEventListener('DOMContentLoaded', async () => {
+  loadHeroImage()
   hamburgerMenuInitiator()
   jumbotronRemover()
   if (window.location.hash === '#maincontent') {

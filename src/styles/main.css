@@ -134,7 +134,7 @@ nav:focus-within {
 .navigation-items li{
     text-decoration: none;
 }
-.jumbotron {
+/* .jumbotron {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/images/heros/hero-image_1.jpg');
     background-size: cover;
     background-position: top center;
@@ -142,6 +142,16 @@ nav:focus-within {
     min-height: 350px;
     width: 100%;
     padding: 300px 30px 100px 25px;
+    overflow: hidden;
+} */
+.image-hero {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/images/heros/hero-image_1.jpg'); */
+    background-size: cover;
+    background-position: top center;
+    background-color: grey;
+    min-height: 350px;
+    width: 100%;
+    padding: 0 30px 100px 25px;
     overflow: hidden;
 }
 .jumbotron h1{
@@ -342,7 +352,7 @@ figcaption {
     padding: 15px;
     border-radius: 5px;
     text-align: center;
-    color: #f1faee;
+    color: #fff;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 300;
     letter-spacing: 1.5px;
@@ -517,7 +527,7 @@ footer {
     text-align: center;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 300;
-    color: #f1faee;
+    color: #fff;
 }
 .no-favorite-restaurant {
     grid-column: 1/4;

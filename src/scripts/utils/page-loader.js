@@ -31,13 +31,13 @@ const pageLoader = async (pageInformation) => {
 
   mainContent.innerHTML = await urlParser.loadPage('empty')
   mainContent.innerHTML = await urlParser.loadPage(pageInformation)
-  if (window.location.hash !== '#home' && window.location.hash !== '#favorite') {
-    backToTopBehaviour()
-
+  if (window.location.hash !== '#home' && window.location.hash !== '#favorite') {    
     const idDetail = window.location.href.split('/')[4]
     // getting data for saving into database
     const restaurantData = await getDetailRestaurant(idDetail)
     await checkFavoriteOnDb(restaurantData)
+
+    backToTopBehaviour()
   }
   paginationListener()
 }

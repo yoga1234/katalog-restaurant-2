@@ -28,9 +28,6 @@ const cacheHelper = {
 
   async _fetchRequest (request) {
     const response = await fetch(request)
-    if (response.status === 0) {
-      console.log('response is 0')
-    }
 
     if (!response || response.status !== 200) {
       return response

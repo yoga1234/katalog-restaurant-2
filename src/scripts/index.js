@@ -15,8 +15,9 @@ const loadHeroImage = () => {
   const jumbotronContainer = document.querySelector('.jumbotron')
   const myHeroImage = new Image()
   myHeroImage.src = heroImage
+  myHeroImage.classList.add('image-hero')
 
-  jumbotronContainer.appendChild(myHeroImage)
+  jumbotronContainer.insertAdjacentElement('afterbegin', myHeroImage)
 }
 
 window.addEventListener('DOMContentLoaded', async () => {

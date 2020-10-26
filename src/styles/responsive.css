@@ -43,9 +43,10 @@
     outline: none;
   }
   .jumbotron h1 {
-    font-size: 25px;
+    font-size: 35px;
   }
   .jumbotron p {
+    top: 175px;
     font-size: 90px;
   }
   .who-we-are-section {
@@ -140,10 +141,10 @@
   nav {
     grid-column-start: 12;
   }
-  .jumbotron {
+  /* .jumbotron {
     height: 650px;
     padding: 350px 30px 50px 30px;
-  }
+  } */
   .article-container {
     width: 95%;
     max-width: 1200px;

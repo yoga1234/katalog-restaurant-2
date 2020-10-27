@@ -11,16 +11,29 @@ if (!fs.existsSync(destination)) {
 
 fs.readdirSync(target)
   .forEach(image => {
-    // width 800px
+    // convert image into width 800px
     sharp(`${target}/${image}`)
       .resize(800)
       .toFile(path.resolve(__dirname, `${destination}/${image.split('.')
         .slice(0, -1)
         .join('.')}-large.jpg`))
+    // webp conversion
+    sharp(`${target}/${image}`)
+      .resize(800)
+      .toFile(path.resolve(__dirname, `${destination}/${image.split('.')
+        .slice(0, -1)
+        .join('.')}-large.webp`))
 
+    // convert image into width 480
     sharp(`${target}/${image}`)
       .resize(480)
       .toFile(path.resolve(__dirname, `${destination}/${image.split('.')
         .slice(0, -1)
         .join('.')}-small.jpg`))
+    // webp conversion
+    sharp(`${target}/${image}`)
+      .resize(480)
+      .toFile(path.resolve(__dirname, `${destination}/${image.split('.')
+        .slice(0, -1)
+        .join('.')}-small.webp`))
   })

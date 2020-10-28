@@ -12,11 +12,11 @@ import swRegister from './utils/sw-register'
 import 'lazysizes'
 import 'lazysizes/plugins/parent-fit/ls.parent-fit'
 
-import loadHeroImage from '../scripts/utils/load-hero-image'
+import createHeroImage from '../scripts/utils/load-hero-image'
 import heroImage from '../public/images/heros/hero-image_1.jpg'
 
 window.addEventListener('DOMContentLoaded', async () => {
-  loadHeroImage(heroImage)
+  createHeroImage(heroImage)
   hamburgerMenuInitiator()
   jumbotronRemover()
   if (window.location.hash === '#maincontent') {

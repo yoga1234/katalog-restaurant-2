@@ -3,6 +3,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const path = require('path')
 const ServiceWorkerWebpackPlugin = require('serviceworker-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default
 const ImageminMozjpeg = require('imagemin-mozjpeg')
@@ -34,10 +35,7 @@ module.exports = {
         test: /\.(svg|eot|woff|ttf|svg|woff2)$/,
         use: [
           {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]'
-            }
+            loader: 'file-loader'
           }
         ]
       }
@@ -46,6 +44,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/templates/index.html'),
+      favicon: './src/public/images/top-icon.png',
       filename: 'index.html'
     }),
     new CopyWebpackPlugin({
@@ -62,6 +61,8 @@ module.exports = {
     new ServiceWorkerWebpackPlugin({
       entry: path.resolve(__dirname, 'src/scripts/sw.js')
     }),
+    new OptimizeCSSAssetsPlugin({}),
+    new BundleAnalyzerPlugin(),
     new ImageminWebpackPlugin({
       plugins: [
         ImageminMozjpeg({
@@ -69,7 +70,6 @@ module.exports = {
           progressive: true
         })
       ]
-    }),
-    new OptimizeCSSAssetsPlugin({})
+    })
   ]
 }

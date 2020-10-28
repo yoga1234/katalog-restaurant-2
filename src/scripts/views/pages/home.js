@@ -21,7 +21,7 @@ const homePage = async (data, pageInformation) => {
       homeReturn += `
         <article class="card-article">
           <figure>
-            <img class="lazyload article-image" src="${CONFIG.IMAGE_SMALL + restaurant.pictureId}" alt="Kafe dengan nama ${restaurant.name}" crossorigin="anonymous" width="100%" height="250px">
+            <img class="lazyload article-image" data-src="${CONFIG.IMAGE_SMALL + restaurant.pictureId}" alt="Kafe dengan nama ${restaurant.name}" crossorigin="anonymous" width="100%" height="250px">
           </figure>
           <h3 class="article-title"><a href="/#detail/${restaurant.id}" class="restaurant-detail">${restaurant.name}</a></h3>
           <p class="article-desc">${restaurant.description}</p>

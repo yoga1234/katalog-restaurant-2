@@ -27,7 +27,7 @@ const createHeroImage = (imageHero) => {
   myHeroImage.setAttribute('alt', 'restaurant hero')
   myHeroImage.setAttribute('width', '100')
   myHeroImage.setAttribute('height', '750')
-  myHeroImage.classList.add('image-hero')
+  myHeroImage.classList.add('lazyload', 'image-hero')
 
   pictureElement.appendChild(firstSourceElement)
   pictureElement.appendChild(secondSourceElement)

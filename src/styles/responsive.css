@@ -24,6 +24,10 @@
     width: max-content;
     height: max-content;
   }
+  #navigation-wrapper {
+    width: 353px;
+    height: 62px;
+  }
   .link-item {
     display: inline-block;
     border: none;
@@ -31,7 +35,8 @@
   }
   .link-item a{
     padding: 20px 15px 20px 15px;
-    width: 100%;
+    width: 115px;
+    height: 62px;
     text-decoration: none;
     display: inline-block;
     color: #fff;

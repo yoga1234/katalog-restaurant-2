@@ -12,7 +12,7 @@ body {
     background-color:#f1faee;
 }
 header {
-    height: max-content;
+    height: 64px;
     width: 100%;
     background-color: #457b9d;
 }
@@ -50,7 +50,6 @@ header {
     border: 3px solid #f1faee;
     border-radius: 5px;
     background-color: rgba(111, 138, 183, .1);
-    transition: .3s ease all;
     cursor: pointer;
 }
 .hamburger-menu:focus {
@@ -71,7 +70,6 @@ header {
     color: #f1faee;
     margin: auto;
     padding: 0 10px 0 10px;
-    transition: .3s ease all;
 }
 .brand-logo:focus {
     border-radius: 5px;
@@ -87,7 +85,6 @@ nav {
     height: max-content;
     background-color: #fff;
     border-radius: 10px;
-    transition: .3s ease all;
 }
 nav:focus-within {
     transform: translate(0, 0);
@@ -101,7 +98,6 @@ nav:focus-within {
     border: 3px solid #457b9d;
     border-radius: 10px;
     text-align: center;
-    transition: .2s ease background-color;
 }
 .link-item:hover {
     background-color: rgba(111, 138, 183, .2);
@@ -180,7 +176,6 @@ nav:focus-within {
     width: max-content;
     height: max-content;
     min-width: 180px;
-    transition: .2s ease all;
 }
 .who-we-are-section {
     display: grid;

@@ -109,7 +109,7 @@ nav:focus-within {
 .link-item a{
     display: block;
     text-transform: uppercase;
-    padding: 10px 30px 10px 30px;
+    padding: 15px 30px 15px 30px;
     text-decoration: none;
     color: #457b9d;
     font-family: 'Roboto', sans-serif;
@@ -221,7 +221,7 @@ nav:focus-within {
     width: max-content;
     padding: 10px 0 10px 15px;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 300;
     text-align: center;
     border-top: 1px solid #e63946;

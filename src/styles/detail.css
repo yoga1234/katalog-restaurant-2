@@ -12,14 +12,11 @@
   width: 90%;
   margin: auto;
 }
-.detail-back-left-arrow {
-  font-size: 22px;
-}
 .detail-back-button {
   display: inline-block;
   width: max-content;
   margin: 25px 5px 5px 15px;
-  padding: 10px 30px 10px 30px;
+  padding: 15px 35px 15px 35px;
   border: 1px solid #457b9d;
   border-radius: 10px;
   font-size: 16px;

@@ -2,6 +2,7 @@ import { restaurantCategories, foodsMenu, drinksMenu, consumerReviews } from '..
 import CONFIG from '../../globals/config'
 
 const detailPage = async (data) => {
+  console.log(data)
   if (data === undefined) {
     return '<h2 class="detail-not-found">Oops, data is cannot be found.</h2>'
   }
@@ -9,7 +10,7 @@ const detailPage = async (data) => {
   const categories = restaurantCategories(data.restaurant.categories)
   const foods = foodsMenu(data.restaurant.menus.foods)
   const drinks = drinksMenu(data.restaurant.menus.drinks)
-  const reviews = consumerReviews(data.restaurant.consumerReviews)
+  const reviews = consumerReviews(data.restaurant.customerReviews)
 
   return `
     <section class="detail-container">

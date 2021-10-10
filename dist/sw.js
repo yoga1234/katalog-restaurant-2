@@ -34,9 +34,6 @@ var serviceWorkerOption = {
     "/manifest.json",
     "/images/24.png",
     "/images/top-icon.png",
-    "/images/svg/fork.png",
-    "/images/svg/group.png",
-    "/images/svg/medal.png",
     "/images/manifest-icon/128x128.png",
     "/images/manifest-icon/144x144.png",
     "/images/manifest-icon/152x152.png",
@@ -47,6 +44,9 @@ var serviceWorkerOption = {
     "/images/manifest-icon/512x512.png",
     "/images/manifest-icon/72x72.png",
     "/images/manifest-icon/96x96.png",
+    "/images/svg/fork.png",
+    "/images/svg/group.png",
+    "/images/svg/medal.png",
     "/top-icon.png",
     "/index.html"
   ]

@@ -23,7 +23,7 @@ const homePage = async (data, pageInformation) => {
           <figure>
             <img class="lazyload article-image" data-src="${CONFIG.IMAGE_SMALL + restaurant.pictureId}" alt="Kafe dengan nama ${restaurant.name}" crossorigin="anonymous" width="100%" height="250px">
           </figure>
-          <h3 class="article-title"><a href="/#detail/${restaurant.id}" class="restaurant-detail">${restaurant.name}</a></h3>
+          <h3 class="article-title"><a href="/katalog-restaurant-2/dist/#detail/${restaurant.id}" class="restaurant-detail">${restaurant.name}</a></h3>
           <p class="article-desc">${restaurant.description}</p>
           <div class="article-footer">
             <p class="article-footer-item-1">${restaurant.city}</p>

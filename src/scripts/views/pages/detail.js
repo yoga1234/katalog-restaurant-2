@@ -2,7 +2,6 @@ import { restaurantCategories, foodsMenu, drinksMenu, consumerReviews } from '..
 import CONFIG from '../../globals/config'
 
 const detailPage = async (data) => {
-  console.log(data)
   if (data === undefined) {
     return '<h2 class="detail-not-found">Oops, data is cannot be found.</h2>'
   }

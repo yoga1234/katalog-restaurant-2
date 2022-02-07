@@ -11,6 +11,8 @@ const cacheHelper = {
     cacheNames
       .filter((name) => name !== CONFIG.CACHE_NAME)
       .map((filteredName) => caches.delete(filteredName))
+
+    console.log('Old cache deleted')
   },
 
   async revalidateCache (request) {
@@ -28,8 +30,10 @@ const cacheHelper = {
 
   async _fetchRequest (request) {
     const response = await fetch(request)
+    console.log('response: ', response)
+    console.log('response:', response.status)
 
-    if (!response || response.status !== 200) {
+    if (!response || response.status !== 200 || response.status !== 201) {
       return response
     }
 

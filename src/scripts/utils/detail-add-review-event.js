@@ -15,7 +15,7 @@ const detailAddReviewEvent = () => {
       }
       const response = await urlParser.insertReviewData(dataSend)
       console.log(response.status)
-      if (response.status === 200) {
+      if (response.status === 200 || response.status === 201) {
         alert('Review Anda berhasil dimasukan')
       } else {
         alert('Opps, review Anda gagal dimasukan. Cobalah beberapa saat lagi.')

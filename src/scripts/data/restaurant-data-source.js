@@ -18,10 +18,9 @@ const getDetailRestaurant = async (id) => {
 
 const addNewReview = async (data) => {
   const sendRequest = await fetch(CONFIG.BASE_URL + CONFIG.ADD_REVIEW_URL, {
-    method: 'post',
+    method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
-      'X-Auth-Token': CONFIG.API_KEY
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify({
       id: data.id,
